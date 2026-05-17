@@ -1,0 +1,21 @@
+# csproj file path
+csproj_file: torr_streaming.csproj
+
+# Default profile, Tizen API version
+profile: tv-samsung
+api_version: "4.0"
+
+# Build type [Debug/ Release/ Test]
+build_type: Debug
+
+# files monitored for dirty/modified status
+files:
+  - torr_streaming.csproj
+  - TVtorrStreamingTizen.cs
+  - tizen-manifest.xml
+  - shared/res/tizen.png
+  - res/icon.png
+  - res/version.txt
+
+# project dependencies
+deps: []

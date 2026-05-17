@@ -1,0 +1,25 @@
+﻿<Project Sdk="Tizen.NET.Sdk/1.1.6">
+
+  <!-- Property Group for .NET Core Project -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>tizen40</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <TizenTpkUserIncludeFiles Include="res\**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TizenTpkUserExcludeFiles Include="torr_streaming.deps.json" />
+    <TizenTpkUserExcludeFiles Include="bin/torr_streaming.pdb" />
+  </ItemGroup>
+
+</Project>
