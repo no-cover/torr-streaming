@@ -1,23 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns="http://tizen.org/ns/packages" api-version="4.0" package="tv.torr.streaming.tizen" version="1.0.0">
+<manifest xmlns="http://tizen.org/ns/packages" api-version="4.0" package="DoyolX8he6" version="1.0.0">
     <profile name="tv" />
-    <service-application appid="tv.torr.streaming.tizen" exec="torr_streaming.dll" multiple="false" nodisplay="true" taskmanage="false" splash-screen-display="false" on-boot="true" type="dotnet">
+    <service-application appid="tv.torr.streaming.tizen" exec="torr_streaming.dll" multiple="false" nodisplay="false" taskmanage="false" splash-screen-display="false" on-boot="true" type="dotnet" launch_mode="caller">
         <label>tv.torr.streaming.tizen</label>
         <icon>icon.png</icon>
         <metadata key="home_category" value="independent"/>
         <metadata key="http://samsung.com/tv/metadata/appbootingsupport" value=""/>
         <metadata key="http://samsung.com/tv/metadata/homereturnsupport" value=""/>
         <metadata key="http://tizen.org/metadata/prefer_dotnet_aot" value="true"/>
-        <metadata key="http://samsung.com/tv/metadata/use.preview" value="true"/>
-        <metadata key="http://developer.samsung.com/tizen/metadata/support-fs-setup-preview" value="true"/>
         <metadata key="http://developer.samsung.com/tizen/metadata/menu" value="none"/>
-        <metadata key="http://samsung.com/tv/metadata/display.hidden" value="true"/>
+        <metadata key="http://samsung.com/tv/metadata/display.hidden" value="false"/>
+        <metadata key="http://samsung.com/tv/metadata/application/read.metadata.from.hybrid.webapp"/>
         <metadata key="http://samsung.com/tv/metadata/application/splashscreen/progressbar" value="disable"/>
         <metadata key="http://samsung.com/tv/metadata/waitingscreen.type" value="none"/>
         <metadata key="http://samsung.com/tv/metadata/application/watchdog.set" value="16,240"/>
         <metadata key="http://developer.samsung.com/tizen/metadata/service.type" value="enterprise.home.solution"/>
-        <metadata key="http://samsung.com/tv/metadata/application/recovery.on.return" value="true"/>
-        <metadata key="http://developer.samsung.com/tizen/metadata/support-popup" value="true"/>
         <metadata key="http://developer.samsung.com/tizen/metadata/support-multiprocess-home" value="true"/>
         <metadata key="http://samsung.com/tv/metadata/no_use_process_pool" value="true"/>
         <metadata key="http://samsung.com/tv/metadata/background.execution.support" value="true"/>
@@ -26,7 +23,7 @@
         <metadata key="http://samsung.com/tv/metadata/prefer_instant_reset" value="true"/>
         <metadata key="http://tizen.org/metadata/support-mode/standalone" value="true"/>
         <metadata key="http://samsung.com/appcontrol/data/launch_mode" value="backgroundAtStartup"/>
-        <metadata key="http://tizen.org/metadata/aliasappid" value="torrserver"/>
+        <metadata key="http://tizen.org/metadata/aliasappid" value="TorrServer"/>
         <metadata key="http://samsung.com/tv/metadata/servicename" value="tv.torr.streaming.tizen"/>
         <metadata key="http://samsung.com/tv/metadata/disable.reset" value="true"/>
         <metadata key="http://samsung.com/tv/metadata/reset" value="none"/>
@@ -34,11 +31,6 @@
         <metadata key="vip_app" value="1"/>
         <background-category value="media"/>
         <background-category value="background-network"/>
-        <app-control>
-            <operation name="http://tizen.org/appcontrol/operation/default"/>
-            <uri name=""/>
-            <mime name=""/>
-        </app-control>
         <app-control>
             <operation name="http://tizen.org/appcontrol/operation/launch_on_event"/>
             <uri name="file:////tmp/firstscreen_done"/>
@@ -61,7 +53,10 @@
         <privilege>http://tizen.org/privilege/filesystem.read</privilege>
         <privilege>http://tizen.org/privilege/filesystem.write</privilege>
         <privilege>http://developer.samsung.com/privilege/hostedapp_deviceapi_allow</privilege>
-        <privilege>http://tizen.org/privilege/systemsettings</privilege>
+        <privilege>http://tizen.org/privilege/packagemanager.admin</privilege>
+        <privilege>http://tizen.org/privilege/systemsettings.admin</privilege>
+        <privilege>http://developer.samsung.com/privilege/was.platform</privilege>
+        <privilege>http://tizen.org/privilege/systemmonitor</privilege>
     </privileges>
     <dependencies/>
     <provides-appdefined-privileges/>
