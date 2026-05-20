@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns="http://tizen.org/ns/packages" api-version="4.0" package="DoyolX8he6" version="1.0.0">
+<manifest xmlns="http://tizen.org/ns/packages" api-version="4.0" package="tv.torr.streaming.tizen" version="1.0.0">
     <profile name="tv" />
-    <service-application appid="tv.torr.streaming.tizen" exec="torr_streaming.dll" multiple="false" nodisplay="false" taskmanage="false" splash-screen-display="false" on-boot="true" type="dotnet" launch_mode="caller">
+    <service-application appid="tv.torr.streaming.tizen" exec="torr_streaming.dll" multiple="false" nodisplay="true" taskmanage="false" splash-screen-display="false" on-boot="true" type="dotnet" launch_mode="caller">
         <label>tv.torr.streaming.tizen</label>
         <icon>icon.png</icon>
         <metadata key="home_category" value="independent"/>
@@ -9,7 +9,7 @@
         <metadata key="http://samsung.com/tv/metadata/homereturnsupport" value=""/>
         <metadata key="http://tizen.org/metadata/prefer_dotnet_aot" value="true"/>
         <metadata key="http://developer.samsung.com/tizen/metadata/menu" value="none"/>
-        <metadata key="http://samsung.com/tv/metadata/display.hidden" value="false"/>
+        <metadata key="http://samsung.com/tv/metadata/display.hidden" value="true"/>
         <metadata key="http://samsung.com/tv/metadata/application/read.metadata.from.hybrid.webapp"/>
         <metadata key="http://samsung.com/tv/metadata/application/splashscreen/progressbar" value="disable"/>
         <metadata key="http://samsung.com/tv/metadata/waitingscreen.type" value="none"/>
