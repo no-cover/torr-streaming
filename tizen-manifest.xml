@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns="http://tizen.org/ns/packages" api-version="4.0" package="tv.torr.streaming.tizen" version="1.0.0">
     <profile name="tv" />
-    <service-application appid="tv.torr.streaming.tizen" exec="torr_streaming.dll" multiple="false" nodisplay="true" taskmanage="false" splash-screen-display="false" on-boot="true" type="dotnet" launch_mode="caller">
+    <service-application appid="tv.torr.streaming.tizen" exec="torr_streaming.dll" multiple="false" nodisplay="true" taskmanage="false" splash-screen-display="false" on-boot="true" type="dotnet" launch_mode="single">
         <label>tv.torr.streaming.tizen</label>
         <icon>icon.png</icon>
         <metadata key="home_category" value="independent"/>
@@ -53,9 +53,8 @@
         <privilege>http://tizen.org/privilege/filesystem.read</privilege>
         <privilege>http://tizen.org/privilege/filesystem.write</privilege>
         <privilege>http://developer.samsung.com/privilege/hostedapp_deviceapi_allow</privilege>
-        <privilege>http://tizen.org/privilege/packagemanager.admin</privilege>
-        <privilege>http://tizen.org/privilege/systemsettings.admin</privilege>
-        <privilege>http://developer.samsung.com/privilege/was.platform</privilege>
+        <privilege>http://tizen.org/privilege/packagemanager</privilege>
+        <privilege>http://tizen.org/privilege/systemsettings</privilege>
         <privilege>http://tizen.org/privilege/systemmonitor</privilege>
     </privileges>
     <dependencies/>

@@ -13,9 +13,9 @@ files:
   - torr_streaming.csproj
   - TVtorrStreamingTizen.cs
   - tizen-manifest.xml
-  - shared/res/tizen.png
+  - shared/res/icon.png
   - res/icon.png
-  - res/version.txt
+  - res/version
 
 # project dependencies
 deps: []
