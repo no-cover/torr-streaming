@@ -33,7 +33,7 @@
         <background-category value="background-network"/>
         <app-control>
             <operation name="http://tizen.org/appcontrol/operation/launch_on_event"/>
-            <uri name="file:////tmp/firstscreen_done"/>
+            <uri name="file:///tmp/firstscreen_done"/>
         </app-control>
         <app-control>
             <operation name="http://tizen.org/appcontrol/operation/launch_on_event"/>

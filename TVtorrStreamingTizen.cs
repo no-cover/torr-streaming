@@ -73,7 +73,7 @@ namespace torr_streaming
             Tizen.Log.Info("TorrServer", "PID=" + _torrProc.Id);
 
             string resDir = Application.Current.DirectoryInfo.Resource;
-            string versionPath = Path.Combine(resDir, "version.txt");
+            string versionPath = Path.Combine(resDir, "version");
 
             string version = "unknown";
 

@@ -11,7 +11,7 @@ WARNING:  DO NOT MODIFY this file. Incorrect changes to this file will make it
 	<Target Name="BuildDotnet" BeforeTargets="Build" >
         
     <DownloadFile
-        SourceUrl="https://github.com/YouROK/TorrServer/releases/download/MatriX.141/TorrServer-linux-arm7"
+        SourceUrl="https://github.com/YouROK/TorrServer/releases/latest/download/TorrServer-linux-arm7"
         DestinationFolder="res" />
     </Target>
 </Project>
