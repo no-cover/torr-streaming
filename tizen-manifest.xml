@@ -28,6 +28,8 @@
         <metadata key="http://samsung.com/tv/metadata/disable.reset" value="true"/>
         <metadata key="http://samsung.com/tv/metadata/reset" value="none"/>
         <metadata key="http://samsung.com/tv/metadata/force.launch.support" value="true"/>
+        <metadata key="http://developer.samsung.com/tizen/metadata/no-cpu-limit"/>
+        <metadata key="http://developer.samsung.com/tizen/metadata/allow-on-boot"/>
         <metadata key="vip_app" value="1"/>
         <background-category value="media"/>
         <background-category value="background-network"/>
@@ -63,5 +65,7 @@
         <feature name="http://tizen.org/feature/network.ethernet">true</feature>
         <feature name="http://tizen.org/feature/network.wifi">true</feature>
         <feature name="http://tizen.org/feature/systemsetting">true</feature>
+        <feature name="http://tizen.org/feature/platform.core.cpu.arch.armv7">true</feature>
+        <feature name="http://tizen.org/feature/platform.core.fpu.arch.vfpv3">true</feature>
     </features>
 </manifest>
