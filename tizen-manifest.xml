@@ -28,8 +28,8 @@
         <metadata key="http://samsung.com/tv/metadata/disable.reset" value="true"/>
         <metadata key="http://samsung.com/tv/metadata/reset" value="none"/>
         <metadata key="http://samsung.com/tv/metadata/force.launch.support" value="true"/>
-        <metadata key="http://developer.samsung.com/tizen/metadata/no-cpu-limit"/>
-        <metadata key="http://developer.samsung.com/tizen/metadata/allow-on-boot"/>
+        <metadata key="http://developer.samsung.com/tizen/metadata/no-cpu-limit" value=""/>
+        <metadata key="http://developer.samsung.com/tizen/metadata/allow-on-boot" value=""/>
         <metadata key="vip_app" value="1"/>
         <background-category value="media"/>
         <background-category value="background-network"/>
